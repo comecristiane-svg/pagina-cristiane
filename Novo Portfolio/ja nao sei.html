@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabalho BI</title>
+  <style>
+
+    body {
+      background-color: #f96fd9;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .titulo-pagina {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .cartao-bi {
+      width: 460px;
+      background: linear-gradient(135deg, #bcead5 0%, #fef9d7 100%);
+      border: 2px solid #2e7d32;
+      border-radius: 11px;
+      padding: 12px;
+      margin: 0 auto 25px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid #2e7d32;
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+    }
+
+    .titulo-header {
+      text-align: center;
+    }
+
+    .titulo-header h1 {
+      font-size: 13px;
+      color: #1b5e20;
+      margin: 0;
+    }
+
+    .titulo-header h2 {
+      font-size: 11px;
+      color: #2e7d32;
+      margin: 2px 0 0 0;
+    }
+
+    .numero-bi {
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    .conteudo {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .foto-principal {
+      width: 95px;
+      height: 115px;
+      border: 1px solid #555;
+      object-fit: cover;
+    }
+
+
+    .coluna-dados {
+      flex: 1;
+      font-size: 11px;
+    }
+
+    .rotulo {
+      font-size: 8.5px;
+      color: #555;
+      display: block;
+    }
+
+    .dado {
+      font-weight: bold;
+      color: #000;
+    }
+
+
+    .coluna-direita {
+      width: 75px;
+      text-align: center;
+    }
+
+    .chip {
+      width: 45px;
+      height: 35px;
+      background-color: #d4af37;
+      border: 1px solid #997a15;
+      border-radius: 4px;
+      margin-top: 5px;
+    }
+
+    .mrz-zone {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 12px;
+      line-height: 1.3;
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="titulo-pagina">Parte Frontal</h2>
+
+  <div class="cartao-bi">
+    
+    <div class="cabecalho">
+      <img src="c:\Users\user\Downloads\images.png" width="65" alt="Emblema">
+      <div class="titulo-header">
+        <h1>REPÚBLICA DE MOÇAMBIQUE</h1>
+        <h2>BILHETE DE IDENTIDADE</h2>
+      </div>
+      <img src="c:\Users\user\Downloads\images (1).png" width="65" alt="Bandeira">
+    </div>
+
+    <div class="numero-bi">
+      Nº: 110106955556C
+    </div>
+
+    <div class="conteudo">
+      <div>
+        <img src="c:\Users\user\Pictures\Whatsapp\IMG_20250726_101601_613.jpg" alt="Foto" class="foto-principal">
+      </div>
+
+      <div class="coluna-dados">
+        <div>
+          <span class="rotulo">Nome:</span>
+          <span class="dado">CRISTIANE ROBERTO COME</span>
+        </div>
+
+        <div class="linha-dupla">
+          <div>
+            <span class="rotulo">Data de Nascimento:</span>
+            <span class="dado">11/04/2008</span>
+          </div>
+          <div>
+            <span class="rotulo">Altura:</span>
+            <span class="dado">1,65 m</span>
+          </div>
+        </div>
+
+        <div class="linha-dupla">
+          <div>
+            <span class="rotulo">Naturalidade:</span>
+            <span class="dado">MAPUTO</span>
+          </div>
+          <div>
+            <span class="rotulo">Sexo:</span>
+            <span class="dado">F</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 4px;">
+          <span class="rotulo">Residência:</span>
+          <span class="dado">Q. 19 CASA 168</span><br>
+          <span class="dado">MAGOANINE-B</span>
+        </div>
+      </div>
+
+      <div class="coluna-direita">
+        <span class="rotulo">Assinatura:</span>
+        <i style="font-size: 11px;">Cristiane Come</i>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="titulo-pagina">Parte Traseira</h2>
+
+  <div class="cartao-bi">
+    
+    <div class="conteudo">
+      <div>
+        <span class="rotulo">Data de Emissão:</span>
+        <span class="dado">18/09/2023</span><br><br>
+        <span class="rotulo">Emitido Em:</span>
+        <span class="dado">CIDADE DE MAPUTO</span>
+      </div>
+
+      <div>
+        <span class="rotulo">Válido Até:</span>
+        <span class="dado">17/09/2028</span><br><br>
+        <span class="rotulo">Estado Civil:</span>
+        <span class="dado">SOLTEIRA</span>
+      </div>
+
+      <div style=>
+        <span class="rotulo">O Director Nacional:</span><br>
+      </div>
+    </div>
+
+    <div class="conteudo" style="margin-top: 10px;">
+      <div>
+        <div class="chip"></div>
+      </div>
+      <div class="coluna-dados" style="padding-left: 15px;">
+        <span class="rotulo">Nome do Pai:</span>
+        <span class="dado">ROBERTO AUGUSTO COME</span><br><br>
+        <span class="rotulo">Nome da Mãe:</span>
+        <span class="dado">SOFIA JULIÃO NHANTUMBO</span>
+      </div>
+      <div style="align-self: flex-end;">
+        <span class="dado" style="font-size: 10px;">AA5688089</span>
+      </div>
+    </div>
+
+    <div class="mrz-zone">
+      IDMOZAA56880892110106955556C<<br>
+      0804116F2809171MOZ<<<<<<<<<<<2<br>
+      COME<<CRISTIANE<ROBERTO<<<<<<<
+    </div>
+
+  </div>
+
+</body>
+</html>

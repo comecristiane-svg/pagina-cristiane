@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+       <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   <style>
+:root {
+    --primary-blue: #051f20;
+    --accent-blue: #163832;
+    --bg-gray: #daf1de; 
+    --card-white: #ffffff;
+    --text-dark: #051f20;
+    --text-muted: #235347;
+    --border-color: #8eb69b;
+}
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: var(--primary-blue);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav-menu ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .nav-menu a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 25px;
+        }
+
+        .hero-container {
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .greeting {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--accent-blue);
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin: 15px 0;
+            color: var(--text-dark);
+        }
+
+        .surname {
+            color: var(--primary-blue);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            color: var(--primary-blue);
+            border: 1px solid var(--border-color);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-blue);
+            color: #ffffff;
+        }
+
+        .arch-frame {
+            width: 300px;
+            height: 400px;
+            border: 2px solid var(--primary-blue);
+            border-radius: 150px 150px 20px 20px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .arch-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        .footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="Index.html" class="logo">Cristiane Come</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="Index.html" class="active">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                    <li><a href="projectos.html">Projectos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-text">
+                <span class="greeting">OLÁ, EU SOU</span>
+                <h1>Cristiane Roberto <br><span class="surname">Come.</span></h1>
+                <p class="subtitle">Estudante apaixonada por tecnologia, livros e criação web.</p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cristiane__roberto?utm_source=qr&stkn=enU1NDM0eDBkemVl" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/cristycome?share_id=EvkukbNnXRA&locale=pt-MZ" title="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://www.linkedin.com/in/cristiane-come-282336314?utm_source=share_via&utm_content=profile&utm_medium=member_androidt="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.tiktok.com/@little.little_foxx?_r=1&_t=ZS-99n2wJpp1Hw" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <br>
+                <div style="margin-top: 20px;">
+                <a href="Curriculum.pdf" download class="btn-project" style="width: auto; padding: 10px 20px; display: inline-flex;">
+              <i class="fa-solid fa-file-arrow-down"></i> Ver Curriculum Vitae
+              </a>
+</div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="arch-frame">
+                    <img src="Imagens/Foto5.jpeg" alt="Foto de Cristiane Come">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+    <p>Cristiane Come &copy; 2026</p>
+
+</body>
+</html>

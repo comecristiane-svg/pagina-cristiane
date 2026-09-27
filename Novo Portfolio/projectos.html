@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectos</title>
+       <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+:root {
+    --primary-blue: #051f20;
+    --accent-blue: #163832;
+    --bg-gray: #daf1de; 
+    --card-white: #ffffff;
+    --text-dark: #051f20;
+    --text-muted: #235347;
+    --border-color: #8eb69b;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: var(--primary-blue);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav-menu ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .nav-menu a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .page-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        .section-container {
+            width: 100%;
+            max-width: 950px;
+        }
+
+        .content-card {
+            background-color: var(--card-white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 45px;
+            height: 3px;
+            background-color: var(--accent-blue);
+            border-radius: 2px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .project-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            background-color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-icon {
+            font-size: 2rem;
+            color: var(--accent-blue);
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.92rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background-color: #e2e8f0;
+            color: var(--primary-blue);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .btn-project {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 10px;
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-project:hover {
+            background-color: var(--accent-blue);
+        }
+
+         .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        .footer p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="Index.html" class="logo">Cristiane Come</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="Index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                    <li><a href="projectos.html" class="active">Projectos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="section-container">
+            <div class="content-card">
+                <h2 class="section-title">Meus Projectos</h2>
+                
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <div>
+                            <h3>Réplica do Bilhete de Identidade</h3>
+                            <p>Desenvolvimento da estrutura frente e verso de um Bilhete de Identidade moçambicano utilizando HTML5 e CSS3 no Visual Studio Code.</p>
+                            <div class="tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">VS Code</span>
+                            </div>
+                        </div>
+
+                        <a href="ja nao sei.html" target="_blank" class="btn-project">
+                            Ver Projecto <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <div>
+                            <h3>Projecto de Electricidade (CV3)</h3>
+                            <p>Elaboração e execução de esquemas elétricos e práticas de circuitos desenvolvidos durante o nível CV3.</p>
+                            <div class="tags">
+                                <span class="tag">Electricidade</span>
+                                <span class="tag">CV3</span>
+                            </div>
+                        </div>
+
+                        <a href="Imagens/Electricidade.jpg" target="_blank" class="btn-project">
+                            Ver Projecto <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <div>
+                            <h3>Criacao de sites</h3>
+                            <p>Website desenvolvido no Google Sites sobre o curso de suporte informatico, criado para uma apresentação académica</p>
+                            <div class="tags">
+                                <span class="tag">Google Sites</span>
+                                <span class="tag">Web Disign</span>
+                            </div>
+                        </div>
+
+                        <a href="https://sites.google.com/view/engenhariainformticasuportetcn/sobre-a-autora-contacto" target="_blank" class="btn-project">
+                            Ver Projecto <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <p>Cristiane Come &copy; 2026</p>
+
+</body>
+</html
